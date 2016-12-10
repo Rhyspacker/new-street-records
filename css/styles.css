@@ -2151,6 +2151,25 @@ header {
     position: fixed;
     right: 10px; } }
 
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif; }
+
+canvas {
+  display: block;
+  vertical-align: bottom; }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+.hero video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
 body {
   font-family: arial;
   background: #f8f9fb; }
