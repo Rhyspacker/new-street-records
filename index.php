@@ -13,6 +13,8 @@ include('includes/header.php');
 ?>
 
 <div class="hero">
+
+	<img src="img/logo-hero.png" />
 	
 	<video autoplay loop poster="video/assets/bgimage.JPG">
 		<source src="video/assets/bgvid.ogv" type="video/ogv">

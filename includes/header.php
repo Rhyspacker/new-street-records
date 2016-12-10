@@ -15,7 +15,11 @@
     
 <header>
 
-  <a href="" title=""><img class="logo"/></a>
+  <div class="logo">
+
+    <a href="" title=""><img src="img/logo.png"/></a>
+
+  </div>
 
   <nav role="navigation"> 
           <span class="nav-btn"></span> 
