@@ -9,3 +9,47 @@
 @import "layout";
 @import "reset";
 @import "mixins";
+
+// Home page news items
+
+.news-item {
+	width:auto;
+	min-height: 380px;
+	background: #515151;
+
+	.news-item-title {
+		padding: 10px;
+		background: #ffffff;
+		width: auto;
+		display: block;
+		border-bottom: 5px solid #ff2943;
+		margin: 0 15px 10px 15px;
+		position: relative;
+		top: 15px;
+	}
+
+	.news-item-excerpt {
+		padding: 10px;
+		background: #f9f9f9;
+		width: auto;
+		display: block;
+		margin: 0 15px;
+		position: relative;
+		top: 15px;
+	}
+
+	.news-item-readmore {
+		display: inline-block;
+		width: auto;
+		height: auto;
+		padding: 4px;
+		background: #000;
+
+		h3 {
+			padding: 0;
+			color: #fff;
+		}
+	}
+
+}
+

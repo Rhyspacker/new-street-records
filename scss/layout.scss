@@ -7,7 +7,7 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	margin: 20px auto;
+	margin: 0 auto;
 	
 	-webkit-flex-flow: row wrap; 
 	-moz-flex-flow: row wrap;
@@ -25,7 +25,7 @@
 	-webkit-flex: 1 1 100px; 
 	-ms-flex: 1 1 100px;
 	flex: 1 1 100px;
-	padding: 0 5px;
+	padding: 0;
 	}
 
 .flex-item-2 {
@@ -67,15 +67,8 @@
 @media screen and (max-width: 669px) {
 	.flex-item, .flex-item-2 {
 	padding: 0;
-	margin: 0 5px 15px 0;
 	}
 	
 	}	
-
-	@media screen and (max-width: 900px) {
-	.flex-item {
-	-webkit-flex: 2 2 300px;
-	}
 	
-	}	
 

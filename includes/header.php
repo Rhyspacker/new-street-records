@@ -35,9 +35,12 @@
         </div>
 
       <ul class="nav">
-        <li><a href="projects.php" title="">ABOUT</a></li>
-        <li><a href="blog.php" title="">SERVICES</a></li>
-        <li><a href="contact.php" title="">CONTACT</a></li>
+        <li><a href="projects.php" title="">HOME</a></li>
+        <li><a href="blog.php" title="">ABOUT</a></li>
+        <li><a href="blog.php" title="">TEAM</a></li>
+        <li><a href="blog.php" title="">NEWS</a></li>
+        <li><a href="blog.php" title="">ARTISTS</a></li>
+        <li><a href="contact.php" title="">GIGS</a></li>
       </ul>
 
     </nav>

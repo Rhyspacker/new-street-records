@@ -9,7 +9,26 @@ h1, h2, h3, h4, h5 {
 	font-family: $headerFont;
 	font-weight: 200;
 	color: #323232;
+	margin: 0;
 }
+
+h1 {
+	font-size: 1.9rem;
+	}
+	
+h2 {
+	font-size: 1.6rem;
+	padding: 5px 10px;
+	}
+	
+h3, label {
+	font-size: 1.4rem;
+	padding: 5px 10px;
+	}
+
+h4 {
+	padding: 5px 10px;
+	}
 
 a {
 
