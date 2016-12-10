@@ -21,8 +21,19 @@
 
   </div>
 
-  <nav role="navigation"> 
-          <span class="nav-btn"></span> 
+  <nav role="navigation">
+
+        <div class="nav-btn">
+
+          <div id="burger-container">
+            <div id="burger">
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+          </div>
+
+        </div>
+
       <ul class="nav">
         <li><a href="projects.php" title="">ABOUT</a></li>
         <li><a href="blog.php" title="">SERVICES</a></li>

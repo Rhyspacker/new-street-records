@@ -2119,17 +2119,21 @@ header {
 ----*/
 @media screen and (max-width: 859px) {
   header {
+    transition: all ease-in-out 0.4s;
     height: 100px; }
   .logo {
     position: absolute;
     left: 8px;
     top: 0px; }
   .nav {
+    width: 100%;
     text-align: left;
     display: none;
     margin: 0;
     float: none;
-    margin: 50px 0 10px 0; }
+    margin: 0 10px 0;
+    position: fixed;
+    left: 0; }
     .nav li {
       display: block;
       padding: 10px;
@@ -2137,6 +2141,8 @@ header {
       background-color: #000000;
       width: 100%; }
   .nav-btn {
+    position: absolute;
+    right: 15px;
     width: 50px;
     display: block;
     background-color: #000000;
@@ -2146,13 +2152,40 @@ header {
     font-weight: 200;
     text-align: center;
     cursor: pointer;
-    margin-top: 30px;
-    padding-bottom: 20px; }
+    margin-top: 30px; }
   .nav-btn:before {
-    content: "\f0c9";
-    font-family: FontAwesome;
     position: fixed;
-    right: 10px; } }
+    left: 10px; }
+  #burger-container {
+    position: relative;
+    width: 60px;
+    height: 60px; }
+  #burger {
+    width: auto;
+    cursor: pointer;
+    display: block; }
+  #burger span {
+    background: #eee;
+    display: block;
+    width: 45px;
+    height: 7px;
+    margin-bottom: 8px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s; }
+  #burger-container.open span:nth-child(2) {
+    width: 0;
+    opacity: 0; }
+  #burger-container.open span:nth-child(3) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -16px; }
+  #burger-container.open span:nth-child(1) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 14px; } }
 
 /* ---- reset ---- */
 body {

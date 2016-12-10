@@ -16,7 +16,7 @@ include('includes/header.php');
 
 	<img src="img/logo-hero.png" />
 	
-	<video autoplay loop poster="video/assets/bgimage.JPG">
+	<video autoplay loop muted poster="video/assets/bgimage.JPG">
 		<source src="video/assets/bgvid.ogv" type="video/ogv">
 		<source src="video/assets/bgvid.webm" type="video/webm">
 		<source src="video/assets/bgvid.mp4" type="video/mp4">

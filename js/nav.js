@@ -1,6 +1,6 @@
 $(window).load(function() {
 
-	$('span.nav-btn').click(function () {
+	$('.nav-btn').click(function () {
 
 					$('ul.nav').toggle();
 				})	
@@ -12,5 +12,11 @@ $(window).load(function() {
 						$('ul.nav').removeAttr('style')
 						}
 					})
+
+				$("#burger-container").on('click', function(){
+       			$(this).toggleClass("open");
+    			});
 	
 });
+
+
