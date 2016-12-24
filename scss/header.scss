@@ -60,16 +60,20 @@ header {
 		}
 
 	}
-	
-	.activeLink {
-		border-bottom: 5px solid $linkColour;
-		color: $linkColour !important;
 
-		&:hover {
-			color: $linkColourHover !important;
-			border-bottom: 5px solid $linkColourHover;
+	@media screen and (min-width: 859px) {
+	
+		.activeLink {
+			border-bottom: 5px solid $linkColour;
+			color: $linkColour !important;
+
+			&:hover {
+				color: $linkColourHover !important;
+				border-bottom: 5px solid $linkColourHover;
+			}
 		}
-	}
+
+	}	
 
 /*----
 @MEDIA REQUESTS FOR NAV

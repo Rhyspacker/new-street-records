@@ -2114,8 +2114,11 @@ header {
 
 .logo {
   display: block;
-  margin: 15px auto 0;
+  margin: 0 auto;
   border: none; }
+  .logo svg {
+    -webkit-animation: none;
+    animation: none; }
   .logo img {
     display: block;
     margin: 0 auto; }
@@ -2137,9 +2140,18 @@ header {
     font-size: 1.6rem;
     font-weight: 200;
     color: #fff;
-    padding: 10px; }
+    padding: 10px;
+    transition: all ease-in-out 0.3s; }
   .nav li a:hover {
-    color: #144e9c; }
+    color: #EF3649; }
+
+@media screen and (min-width: 859px) {
+  .activeLink {
+    border-bottom: 5px solid #EF3649;
+    color: #EF3649 !important; }
+    .activeLink:hover {
+      color: #f7717f !important;
+      border-bottom: 5px solid #f7717f; } }
 
 /*----
 @MEDIA REQUESTS FOR NAV
