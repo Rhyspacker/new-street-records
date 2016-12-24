@@ -9,12 +9,12 @@ $pageKeywords = 'page, web, rhys';
 $cssPath = 'css/styles.css';
 
 include('includes/header.php'); 
-
 ?>
+
 
 <div class="hero">
 
-	<img src="img/logo-hero.png" />
+	<img src="img/logo.svg" style="max-width: 400px; width: 100%; height: auto;"/>
 	
 	<video autoplay loop muted poster="video/assets/bgimage.JPG">
 		<source src="video/assets/bgvid.ogv" type="video/ogv">
@@ -121,6 +121,12 @@ include('includes/header.php');
 	
 
 </div>
+
+<main>
+
+
+
+</main>
      
 
 

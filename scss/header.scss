@@ -13,8 +13,12 @@ header {
 
 .logo {
 	display: block;
-	margin: 15px auto 0;
+	margin: 0 auto;
 	border: none;
+
+	svg {
+		animation: none;
+	}
 
 	img {
 	display: block;
@@ -47,14 +51,25 @@ header {
 		font-weight: 200;
 		color: #fff;
 		padding: 10px;
+		transition: $defaultTransition;
+
 		}
 
 	li a:hover {
-		color: #144e9c;
+		color: $linkColour;
 		}
 
 	}
 	
+	.activeLink {
+		border-bottom: 5px solid $linkColour;
+		color: $linkColour !important;
+
+		&:hover {
+			color: $linkColourHover !important;
+			border-bottom: 5px solid $linkColourHover;
+		}
+	}
 
 /*----
 @MEDIA REQUESTS FOR NAV

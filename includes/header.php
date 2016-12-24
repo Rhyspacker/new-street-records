@@ -12,12 +12,37 @@
   
 
 <body>
+
+<?php 
+$index = null;
+$about = null;
+$team = null;
+$news = null;
+$artists = null;
+$gigs = null;
+
+$menuLink = basename($_SERVER['PHP_SELF'], ".php");
+
+if($menuLink == "index") {
+  $index = 'activeLink'; 
+} else if ($menuLink == "about") {
+  $about = 'activeLink';
+} else if ($menuLink == "team") {
+  $team = 'activeLink';
+} else if ($menuLink == "news") {
+  $news = 'activeLink';
+} else if ($menuLink == "artists") {
+  $artists = 'activeLink';
+} else if ($menuLink == "gigs") {
+  $gigs = 'activeLink';
+}
+?>
     
 <header>
 
   <div class="logo">
 
-    <a href="" title=""><img src="img/logo.png"/></a>
+    <a href="" title=""><img src="img/logo.svg" style="max-width: 110px;" /></a>
 
   </div>
 
@@ -35,12 +60,12 @@
         </div>
 
       <ul class="nav">
-        <li><a href="projects.php" title="">HOME</a></li>
-        <li><a href="blog.php" title="">ABOUT</a></li>
-        <li><a href="blog.php" title="">TEAM</a></li>
-        <li><a href="blog.php" title="">NEWS</a></li>
-        <li><a href="blog.php" title="">ARTISTS</a></li>
-        <li><a href="contact.php" title="">GIGS</a></li>
+        <li><a href="index.php" class="<?php echo $index; ?>" title="">HOME</a></li>
+        <li><a href="about.php" class="<?php echo $about; ?>" title="">ABOUT</a></li>
+        <li><a href="team.php"  class="<?php echo $team; ?>"title="">TEAM</a></li>
+        <li><a href="news.php"  class="<?php echo $news; ?>"title="">NEWS</a></li>
+        <li><a href="artists.php"  class="<?php echo $artists; ?>"title="">ARTISTS</a></li>
+        <li><a href="gigs.php"  class="<?php echo $gigs; ?>"title="">GIGS</a></li>
       </ul>
 
     </nav>

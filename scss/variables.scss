@@ -10,8 +10,20 @@
 $mainBg: #000000;
 $secondBg: #ff2943;
 
-$hoverColour: #ff2943;
+$hoverColour: #EF3649;
+
+$linkColour: #EF3649;
+$linkColourHover: #f7717f;
 
 $headerFont: 'Fjalla One', sans-serif;
 $pFont: 'Nunito', sans-serif;
 
+// Breakpoints
+
+$tabletBreakpoint: 859px;
+$mobileBreakpoint: 500px;
+
+// Other
+
+$defaultTransition: all ease-in-out .3s;
+$footerHeader: #ffffff;
