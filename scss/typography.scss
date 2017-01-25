@@ -1,39 +1,98 @@
-p, li {
+p {
 	display: block;
 	font-size: 1.3rem;
 	font-family: $pFont;
-	color: #323232;
-}
+	color: $mainBg;
+	padding: 10px 0;
+	margin: 5px 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1.0rem;
+		}
+	}
 
 h1, h2, h3, h4, h5 {
 	font-family: $headerFont;
 	font-weight: 200;
 	color: #323232;
 	margin: 0;
-}
+	font-weight: 600;
+	}
 
 h1 {
 	font-size: 1.9rem;
+	padding: 5px 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1.7rem;
+		}
 	}
-	
+
 h2 {
 	font-size: 1.6rem;
-	padding: 5px 10px;
+	padding: 5px 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1.4rem;
+		}
 	}
-	
-h3, label {
-	font-size: 1.4rem;
-	padding: 5px 10px;
+
+h3 {
+	font-size: 1.3rem;
+	padding: 5px 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1rem;
+		}
 	}
 
 h4 {
-	padding: 5px 10px;
+	font-size: 1.2rem;
+	padding: 5px 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1.0rem;
+		}
+	}
+
+label {
+	font-size: 1.3rem;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		font-size: 1.1rem;
+		}
 	}
 
 a {
+   color: $mainBg;
+   transition: all ease-in-out .4s;
+	 font-size: 1.3rem;
+	 font-family: $pFont;
+	 border-bottom: 3px solid $linkColour;
+	 text-decoration: none;
+   &:hover {
+   color: $linkColourHover;
+	 border-bottom: 3px solid $linkColourHover;
+	 }
 
+	 @media screen and (max-width: $mobileBreakpoint) {
+	 font-size: 1.0rem;
+	 }
 }
 
-a:hover {
+li {
+	font-family: $pFont;
+	font-size: 1.1rem;
+	list-style-type: disc;
+  list-style-position: outside;
 
-}
+    /*
+     * Because the bullet is outside of the list’s
+     * container, indent the list entirely
+     */
+    margin-left: 1em;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+		font-size: 0.9rem;
+		}
+	}

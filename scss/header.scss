@@ -3,12 +3,12 @@ header {
 	display: block;
     background: $mainBg;
 	width: 100%;
-	height: 160px;
+	height: 180px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
-	}	
+	}
 
 
 .logo {
@@ -27,10 +27,10 @@ header {
 
 	}
 
-	
-.nav { 
+
+.nav {
 	background-color: $mainBg;
-	color: #fff; 
+	color: #fff;
 	margin: 8px 0 0 0;
 	text-align: center;
 	float: none;
@@ -41,11 +41,12 @@ header {
 		}
 
 	li {
-		display: inline; 
+		display: inline;
 		}
 
 	li a {
-		text-decoration: none; 
+		border-bottom: 0;
+		text-decoration: none;
 		font-family: $headerFont;
 		font-size: 1.6rem;
 		font-weight: 200;
@@ -62,23 +63,23 @@ header {
 	}
 
 	@media screen and (min-width: 859px) {
-	
+
 		.activeLink {
-			border-bottom: 5px solid $linkColour;
+			border-bottom: 5px solid $linkColour !important;
 			color: $linkColour !important;
 
 			&:hover {
 				color: $linkColourHover !important;
-				border-bottom: 5px solid $linkColourHover;
+				border-bottom: 5px solid $linkColourHover !important;
 			}
 		}
 
-	}	
+	}
 
 /*----
 @MEDIA REQUESTS FOR NAV
 ----*/
-	
+
 @media screen and (max-width: 859px) {
 
 header {
@@ -91,7 +92,7 @@ header {
 	left: 8px;
 	top: 0px;
 	}
-	
+
 .nav {
 	width: 100%;
 	text-align: left;
@@ -103,7 +104,7 @@ header {
     position: fixed;
     left: 0;
 
-	
+
 	li {
 		display: block;
 		padding: 8px;
@@ -118,7 +119,7 @@ header {
 	position: absolute;
 	right: 15px;
 	width: 50px;
-	display: block; 
+	display: block;
 	background-color: $mainBg;
 	color: #ffffff;
 	font-family: $headerFont;
@@ -127,14 +128,14 @@ header {
 	text-align:center;
 	cursor: pointer;
 	margin-top: 30px;
-	}	
-	
+	}
+
 .nav-btn:before {
 	position: fixed;
 	left: 10px;
-		}				
-		
-	
+		}
+
+
 
 
 #burger-container{

@@ -10,6 +10,14 @@ footer {
 	background-color: $mainBg;
 	border-top: 4px solid #eeeeee;
 
+	a {
+		color: white;
+		}
+
+	h2 {
+		color: $linkColour;
+	}
+
 	p {
 		font-size: 1.0rem;
 		line-height: 1.3rem;
@@ -23,9 +31,21 @@ footer {
 
 	#copyright {
 		width: 100%;
-	display: block;
-	margin-top: 50px;
-	text-align: center;
+		display: block;
+		margin-top: 50px;
+		text-align: center;
 		}
 
+	ul {
+		margin: 15px 0;
+		}
+
+	li {
+		margin-bottom: 10px;
+		}
+	}
+
+footer .flex-item {
+	padding: 40px 50px;
+	max-width: 200px;
 	}
