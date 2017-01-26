@@ -1,3 +1,10 @@
+<?php
+
+$fbPath = '../../new-street-records/img/svg/facebook.svg';
+$twitPath = '../../new-street-records/img/svg/twitter.svg';
+
+?>
+
 <footer class="flex-container" role="contentinfo">
 
 	<div class="flex-item">
@@ -16,15 +23,15 @@
 
 		<h2>Follow Us</h2>
 
-		<a href="#" title="">
+		<a href="#" title="External link to our facebook page">
 
-			<img src="img/svg/twitter.svg" alt="Kiwi standing on oval">
+			<img src="<?php echo $fbPath; ?>" alt="facebook link">
 
 		</a>
 
 		<a href="#" title="">
 
-			<img src="img/svg/facebook.svg" alt="Kiwi standing on oval">
+			<img src="<?php echo $twitPath; ?>" alt="Kiwi standing on oval">
 
 		</a>
 

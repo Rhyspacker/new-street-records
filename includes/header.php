@@ -28,28 +28,22 @@ $news = null;
 $artists = null;
 $gigs = null;
 
-$menuLink = basename($_SERVER['PHP_SELF'], ".php");
+$logoPath = '../../new-street-records/img/logo.svg';
 
-if($menuLink == "index") {
-  $index = 'activeLink';
-} else if ($menuLink == "about") {
-  $about = 'activeLink';
-} else if ($menuLink == "team") {
-  $team = 'activeLink';
-} else if ($menuLink == "news") {
-  $news = 'activeLink';
-} else if ($menuLink == "artists") {
-  $artists = 'activeLink';
-} else if ($menuLink == "gigs") {
-  $gigs = 'activeLink';
-}
+$indexPath = '../../new-street-records/index.php';
+$aboutPath = '../../new-street-records/about.php';
+$teamPath = '../../new-street-records/team.php';
+$newsPath = '../../new-street-records/news.php';
+$artistsPath = '../../new-street-records/artists.php';
+$gigsPath = '../../new-street-records/gigs.php';
+
 ?>
 
 <header role="banner">
 
   <div class="logo">
 
-    <a href="" title=""><img src="img/logo.svg" style="max-width: 110px;" /></a>
+    <a href="" title=""><img src="<?php echo $logoPath; ?>" style="max-width: 110px;" /></a>
 
   </div>
 
@@ -67,12 +61,12 @@ if($menuLink == "index") {
         </div>
 
       <ul class="nav">
-        <li><a href="index.php" class="<?php echo $index; ?>" title="">HOME</a></li>
-        <li><a href="about.php" class="<?php echo $about; ?>" title="">ABOUT</a></li>
-        <li><a href="team.php"  class="<?php echo $team; ?>"title="">TEAM</a></li>
-        <li><a href="news.php"  class="<?php echo $news; ?>"title="">NEWS</a></li>
-        <li><a href="artists.php"  class="<?php echo $artists; ?>"title="">ARTISTS</a></li>
-        <li><a href="gigs.php"  class="<?php echo $gigs; ?>"title="">GIGS</a></li>
+        <li><a href="<?php echo $indexPath; ?>" title="">HOME</a></li>
+        <li><a href="<?php echo $aboutPath; ?>" title="">ABOUT</a></li>
+        <li><a href="<?php echo $teamPath; ?>" title="">TEAM</a></li>
+        <li><a href="<?php echo $newsPath; ?>" title="">NEWS</a></li>
+        <li><a href="<?php echo $artistsPath; ?>" title="">ARTISTS</a></li>
+        <li><a href="<?php echo $gigsPath; ?>" title="">GIGS</a></li>
       </ul>
 
     </nav>

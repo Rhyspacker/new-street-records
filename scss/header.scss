@@ -58,20 +58,8 @@ header {
 
 	li a:hover {
 		color: $linkColour;
-		}
-
-	}
-
-	@media screen and (min-width: 859px) {
-
-		.activeLink {
-			border-bottom: 5px solid $linkColour !important;
-			color: $linkColour !important;
-
-			&:hover {
-				color: $linkColourHover !important;
-				border-bottom: 5px solid $linkColourHover !important;
-			}
+		border-bottom: 5px solid $linkColour;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
 		}
 
 	}
