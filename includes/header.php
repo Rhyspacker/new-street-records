@@ -2,18 +2,25 @@
 <html>
   <head>
     <title><?php echo $pageTitle; ?></title>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php echo $pageDescription; ?>">
     <meta name="keywords" content="<?php echo $pageKeywords; ?>">
-    
+    <meta name="author" content="New Sreet Records">
+
+    <meta property="og:title" content="<?php echo $pageTitle; ?>" >
+    <meta property="og:description" content="<?php echo $pageDescription; ?>" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="<?php echo $pageUrl; ?>" >
+    <meta property="og:site_name" content="New Sreet Records" >
+
     <link href="<?php echo $cssPath; ?>" type="text/css" rel="stylesheet"/>
   </head>
-  
+
 
 <body>
 
-<?php 
+<?php
 $index = null;
 $about = null;
 $team = null;
@@ -24,7 +31,7 @@ $gigs = null;
 $menuLink = basename($_SERVER['PHP_SELF'], ".php");
 
 if($menuLink == "index") {
-  $index = 'activeLink'; 
+  $index = 'activeLink';
 } else if ($menuLink == "about") {
   $about = 'activeLink';
 } else if ($menuLink == "team") {
@@ -37,8 +44,8 @@ if($menuLink == "index") {
   $gigs = 'activeLink';
 }
 ?>
-    
-<header>
+
+<header role="banner">
 
   <div class="logo">
 

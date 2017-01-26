@@ -1,21 +1,20 @@
-
-
-
 <?php
 // Define variables for SEO
-$pageTitle = 'Orange Widgets | The Best Orange Widgets';
-$pageDescription = 'Visit AwesomeOrangeWidgets.com to find the best orange widgets in all the lands (Oz included).';
-$pageKeywords = 'page, web, rhys';
+$pageTitle = 'Home | New Street Records';
+$pageDescription = 'Student led record label network, giving the best opportunity for young, talented and homegrown university musicians';
+$pageKeywords = 'New Street Records, record label, Manchester, music signing, label';
+$pageUrl = "http://newstreetrecords.co.uk">
+
 $cssPath = 'css/styles.css';
 
-include('includes/header.php'); 
+include('includes/header.php');
 ?>
 
 
 <div class="hero">
 
 	<img src="img/logo.svg" style="max-width: 400px; width: 100%; height: auto;"/>
-	
+
 	<video autoplay loop muted poster="video/assets/bgimage.JPG">
 		<source src="video/assets/bgvid.ogv" type="video/ogv">
 		<source src="video/assets/bgvid.webm" type="video/webm">
@@ -36,7 +35,7 @@ include('includes/header.php');
 			<div class="news-item-excerpt">
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. 
+				tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 
 				<div class="news-item-readmore">
@@ -45,7 +44,7 @@ include('includes/header.php');
 
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -59,7 +58,7 @@ include('includes/header.php');
 			<div class="news-item-excerpt">
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. 
+				tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 
 				<div class="news-item-readmore">
@@ -68,7 +67,7 @@ include('includes/header.php');
 
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -82,7 +81,7 @@ include('includes/header.php');
 			<div class="news-item-excerpt">
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. 
+				tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 
 				<div class="news-item-readmore">
@@ -91,7 +90,7 @@ include('includes/header.php');
 
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -105,7 +104,7 @@ include('includes/header.php');
 			<div class="news-item-excerpt">
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. 
+				tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 
 				<div class="news-item-readmore">
@@ -114,22 +113,20 @@ include('includes/header.php');
 
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
-	
+
 
 </div>
 
-<main>
+<main role="main">
 
 
 
 </main>
-     
+
 
 
 <?php include('includes/footer.php'); ?>
-
- 
