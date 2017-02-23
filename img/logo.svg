@@ -5,63 +5,7 @@
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="406.5px"
 	 height="383.5px" viewBox="0 0 406.5 383.5" enable-background="new 0 0 406.5 383.5" xml:space="preserve">
-
-<style>
-
-#rings, #records {
-  animation-name: fadeIn;
-  animation-duration: 1.6s;
-  animation-timing-function: cubic-bezier(.17,.67,.42,1.36);
-  transform-origin: 50% 50%;
-}
-
-@keyframes fadeIn {
-
-0% {
-  opacity: 0.1;
-  transform: scale(0.1);
-  }
-
-50% {
-  opacity: 0.7
-  transform: scale(0.5);
-  }
-
-100% {
-  opacity: 1;
-  transform: scale(1);
-  }
-
-}
-
-#newstreet {
-  animation-name: bounceIn;
-  animation-duration: 1.6s;
-  animation-timing-function: cubic-bezier(.17,.67,.42,1.36);
-  transform-origin: 50% 50%;
-}
-
-@keyframes bounceIn {
-
-0% {
-  opacity: 0.1;
-  transform: scale(0.2);
-  }
-
-50% {
-  opacity: 0.7
-  transform: scale(0.7);
-  }
-
-100% {
-  opacity: 1;
-  transform: scale(1);
-  }
-
-}
-
-</style>
-
+	 
 <g id="newstreet_1_">
 	<g id="newstreet">
 		<path fill="#EF3649" d="M84.896,230.287c-3.792,0.662-7.082,0.014-9.982-2.268c-3.945-3.104-6.295-7.347-8.119-11.873
