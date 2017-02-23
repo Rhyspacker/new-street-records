@@ -1,0 +1,39 @@
+input, textarea, select{
+	font-size: 18px;
+	padding: 10px 0 10px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	resize: none;
+	border: none;
+	border-radius: 0;
+	border-bottom: 3px solid #757575;
+	transition: $defaultTransition;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	border-bottom: 3px solid $hoverColour;
+}
+
+label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: $headerFont;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+input:focus ~ label, input.used ~ label, textarea:focus ~ label, textarea.used ~ label, select:focus ~ label, select.used ~ label{
+	top: -20px;
+  transform: scale(.75);
+	left: -5px;
+	/* font-size: 14px; */
+	color: $hoverColour;
+}
