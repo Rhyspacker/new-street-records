@@ -1,10 +1,3 @@
-<?php
-
-$fbPath = '../../new-street-records/img/svg/facebook.svg';
-$twitPath = '../../new-street-records/img/svg/twitter.svg';
-
-?>
-
 <footer class="flex-container" role="contentinfo">
 
 	<div class="flex-item">
@@ -12,9 +5,9 @@ $twitPath = '../../new-street-records/img/svg/twitter.svg';
 		<h2>Other Links</h2>
 
 		<ul>
-			<li><a href="terms-conditions.php">Terms &amp; Conditions</a></li>
-			<li><a href="terms-conditions.php">Join the Label</a></li>
-			<li><a href="terms-conditions.php">Contact Us</a></li>
+			<li><a href="<?php echo $dirPath; ?>terms-conditions">Terms &amp; Conditions</a></li>
+			<li><a href="<?php echo $dirPath; ?>join-newstreetrecords">Join the Label</a></li>
+			<li><a href="<?php echo $dirPath; ?>contact">Contact Us</a></li>
 		</ul>
 
 	</div>
@@ -25,13 +18,13 @@ $twitPath = '../../new-street-records/img/svg/twitter.svg';
 
 		<a href="#" title="External link to our facebook page">
 
-			<img src="<?php echo $fbPath; ?>" alt="facebook link">
+			<img src="<?php echo $dirPath; ?>img/svg/facebook.svg" alt="facebook link">
 
 		</a>
 
 		<a href="#" title="">
 
-			<img src="<?php echo $twitPath; ?>" alt="Kiwi standing on oval">
+			<img src="<?php echo $dirPath; ?>img/svg/twitter.svg" alt="Kiwi standing on oval">
 
 		</a>
 
@@ -42,7 +35,8 @@ $twitPath = '../../new-street-records/img/svg/twitter.svg';
 </footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/nav.js"></script>
+	<script src="<?php echo $dirPath; ?>js/nav.js"></script>
+	<script src="<?php echo $dirPath; ?>js/input-boxes.js"></script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
