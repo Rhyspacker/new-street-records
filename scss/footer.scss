@@ -48,4 +48,8 @@ footer {
 footer .flex-item {
 	padding: 40px 50px;
 	max-width: 200px;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		padding: 30px 30px;
+		}
 	}
