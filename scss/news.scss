@@ -1,0 +1,39 @@
+// Home page news items
+
+.news-item {
+	width:auto;
+	min-height: 380px;
+	background: #515151;
+
+	.news-item-title {
+		padding: 10px;
+		background: #ffffff;
+		width: auto;
+		display: block;
+		border-bottom: 8px solid #ff2943;
+		margin: 0 15px 10px 15px;
+		position: relative;
+		top: 15px;
+
+    h1 {
+      @media screen and (max-width: $desktopBreakpoint) {
+        font-size: 1.4rem;
+      }
+    }
+	}
+
+	.news-item-excerpt {
+		padding: 10px;
+		background: #f9f9f9;
+		width: auto;
+		display: block;
+		margin: 0 15px;
+		position: relative;
+		top: 15px;
+    p {
+      @media screen and (max-width: $desktopBreakpoint) {
+        font-size: 1.1rem;
+      }
+    }
+	}
+}

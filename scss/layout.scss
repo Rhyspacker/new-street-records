@@ -1,3 +1,67 @@
+// Main
+
+
+main {
+	max-width: 1100px;
+	height: 100%;
+	padding: 40px 40px;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+		margin: 10px 0;
+	  height: auto;
+	  object-fit: contain;
+	  overflow: hidden;
+		}
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		padding: 10px 20px;
+		}
+	}
+
+article {
+	padding: 0;
+	text-align: left;
+	}
+
+.full-row {
+	margin: 0 auto;
+	display: block;
+	}
+
+figure {
+	height: auto;
+	display: inline-block;
+	margin: 15px;
+	}
+
+figcaption {
+	display: inline-block;
+	padding:10px 5px;
+	background-color: #e6e6e6;
+  position: relative;
+  top: 10px;
+
+    a {
+	font-size: 1.1rem;
+		}
+	}
+
+
+.center {
+	text-align: center !important;
+	margin: 0 auto;
+	}
+
+.hide {
+  display: none !important;
+  transition: $defaultTransition;
+	}
+
+.spacing {
+	margin: 10px 0;
+	}
 
 
 
@@ -8,39 +72,43 @@
 	display: -webkit-flex;
 	display: flex;
 	margin: 0 auto;
-	
-	-webkit-flex-flow: row wrap; 
+
+	-webkit-flex-flow: row wrap;
 	-moz-flex-flow: row wrap;
-	-ms-flex-flow: row wrap; 
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 
-	
-	-webkit-justify-content: center; 
+
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
 	}
-	
+
 .flex-item {
 	min-width: 270px;
-	-webkit-flex: 1 1 100px; 
+	-webkit-flex: 1 1 100px;
 	-ms-flex: 1 1 100px;
 	flex: 1 1 100px;
 	padding: 0;
+
+	@media screen and (max-width: $mobileBreakpoint) {
+		min-width: 230px;
+		}
 	}
 
 .flex-item-2 {
 	min-width: 280px;
-	-webkit-flex: 2 2 100px; 
+	-webkit-flex: 2 2 100px;
 	-ms-flex: 2 2 100px;
 	flex: 2 2 100px;
 	padding: 0 8px;
 	}
-	
+
 .center {
 	text-align: center !important;
 	margin: 0 auto;
-	}	
-	
+	}
+
 .hide {
     display: none !important;
 	}
@@ -54,7 +122,7 @@
 
 	.flex-container {
     display: block;
- 
+
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -62,13 +130,11 @@
 		}
 
 	}
-	
-	
+
+
 @media screen and (max-width: 669px) {
 	.flex-item, .flex-item-2 {
 	padding: 0;
 	}
-	
-	}	
-	
 
+	}
