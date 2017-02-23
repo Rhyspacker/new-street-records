@@ -55,14 +55,6 @@ h4 {
 		}
 	}
 
-label {
-	font-size: 1.3rem;
-
-	@media screen and (max-width: $mobileBreakpoint) {
-		font-size: 1.1rem;
-		}
-	}
-
 a {
    color: $mainBg;
    transition: all ease-in-out .4s;
@@ -77,8 +69,8 @@ a {
 
 	 @media screen and (max-width: $mobileBreakpoint) {
 	 font-size: 1.0rem;
-	 }
-}
+	 	}
+	}
 
 li {
 	font-family: $pFont;
@@ -95,4 +87,8 @@ li {
     @media screen and (max-width: $mobileBreakpoint) {
 		font-size: 0.9rem;
 		}
+	}
+
+.bold {
+	font-weight: bolder;
 	}
