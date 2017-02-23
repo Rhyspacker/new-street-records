@@ -11,7 +11,7 @@ include('includes/header.php');
 
 <div class="hero">
 
-	<img src="img/logo.svg" style="max-width: 400px; width: 100%; height: auto;"/>
+	<img src="img/logo-hero.svg"/>
 
 	<video autoplay loop muted poster="video/assets/bgimage.JPG">
 		<!--
